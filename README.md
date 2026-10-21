@@ -1,7 +1,5 @@
 # supervised_learning_2026
 
-[![agents-cli 1.11.0](https://img.shields.io/badge/agents--cli-1.11.0-blue.svg)](https://google.github.io/agents-cli/guide/getting-started/)
-[![TensorFlow 2.20.0](https://img.shields.io/badge/TensorFlow-2.20.0-FF6F00)](https://github.com/tensorflow/tensorflow/releases/tag/v2.20.0)
 [![Python 3.11](https://img.shields.io/badge/Python-3.11-3776AB)](https://www.python.org/downloads/)
 [![scikit-learn 1.9.1](https://img.shields.io/badge/scikit--learn-1.9.1-F7931E)](https://github.com/scikit-learn/scikit-learn/releases/tag/1.9.1)
 [![XGBoost 3.2.0](https://img.shields.io/badge/XGBoost-3.2.0-189FDD)](https://github.com/dmlc/xgboost/releases/tag/v3.2.0)
