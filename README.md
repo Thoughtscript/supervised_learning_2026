@@ -14,7 +14,7 @@
 
 ## Overview
 
-I asked GitHub Copilot to quickly scaffold an example using these **Supervised Learning** techniques:
+I asked GitHub Copilot to quickly scaffold an example using these **Supervised Learning** (labeled data) techniques:
 * **XGBoost**
 * **Random Forest**
 * **Gradient Boosting**
