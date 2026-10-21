@@ -1,0 +1,7 @@
+{
+  "task": "classification: churned",
+  "train_auc": 0.718,
+  "val_auc": 0.7286,
+  "test_auc": 0.7412,
+  "test_accuracy": 0.689
+}

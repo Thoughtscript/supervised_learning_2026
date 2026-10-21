@@ -1,0 +1,5 @@
+{
+  "task": "forecast: daily sales (1-step ahead, last 60 days held out)",
+  "test_mae": 2.64,
+  "baseline_seasonal_naive_mae": 2.747
+}

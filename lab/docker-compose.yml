@@ -1,0 +1,28 @@
+# Everything runs in one container; the lab folder is mounted so that
+# data/ and every model's artifacts appear on the host.
+x-lab: &lab
+  build: .
+  volumes:
+    - .:/lab
+
+services:
+  data:        # 1. generate train + production + drifted CSVs
+    <<: *lab
+    command: python common/generate_data.py
+
+  train:       # 2. train every model (each saves into its own directory)
+    <<: *lab
+    command: python train_all.py
+    depends_on:
+      data: { condition: service_completed_successfully }
+
+  concepts:    # 3. demonstrate leakage, under/overfitting, drift, skew
+    <<: *lab
+    command: python concepts/run_all.py
+    depends_on:
+      train: { condition: service_completed_successfully }
+
+  shell:       # optional: docker compose run --rm shell
+    <<: *lab
+    command: bash
+    profiles: ["tools"]

@@ -1,0 +1,7 @@
+{
+  "task": "classification: churned (soft-voting ensemble)",
+  "train_auc": 0.7808,
+  "val_auc": 0.7172,
+  "test_auc": 0.7309,
+  "test_accuracy": 0.674
+}
